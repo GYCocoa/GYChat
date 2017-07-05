@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  GYChat
+//
+//  Created by GY.Z on 2017/6/28.
+//  Copyright © 2017年 deepbaytech. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "XMPPStream.h"
+#import "XMPPPresence.h"
+#import "XMPPManager.h"
+#import "XMPPRosterCoreDataStorage.h"
+
+#define DYWidth [UIScreen mainScreen].bounds.size.width
+#define DYHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */

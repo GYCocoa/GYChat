@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CC708E8E12B90981AB6A267 /* Pods_GYChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E662652E91908FDCE3730D /* Pods_GYChat.framework */; };
+		F5371FF31F0B9C8900C43B90 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5371FF21F0B9C8900C43B90 /* LeftTableViewCell.m */; };
+		F5371FF61F0B9C9200C43B90 /* RightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5371FF51F0B9C9200C43B90 /* RightTableViewCell.m */; };
+		F5EBD7221F03AB4700DD3352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7211F03AB4700DD3352 /* main.m */; };
+		F5EBD7251F03AB4700DD3352 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7241F03AB4700DD3352 /* AppDelegate.m */; };
+		F5EBD7281F03AB4700DD3352 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7271F03AB4700DD3352 /* ViewController.m */; };
+		F5EBD72B1F03AB4700DD3352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EBD7291F03AB4700DD3352 /* Main.storyboard */; };
+		F5EBD72D1F03AB4700DD3352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EBD72C1F03AB4700DD3352 /* Assets.xcassets */; };
+		F5EBD7301F03AB4700DD3352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EBD72E1F03AB4700DD3352 /* LaunchScreen.storyboard */; };
+		F5EBD73B1F03AB4700DD3352 /* GYChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD73A1F03AB4700DD3352 /* GYChatTests.m */; };
+		F5EBD7461F03AB4800DD3352 /* GYChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7451F03AB4800DD3352 /* GYChatUITests.m */; };
+		F5EBD7551F03ADB000DD3352 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7541F03ADB000DD3352 /* ListTableViewController.m */; };
+		F5EBD7581F03AE4C00DD3352 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7571F03AE4C00DD3352 /* ChatTableViewController.m */; };
+		F5EBD75A1F03AED100DD3352 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EBD7591F03AED100DD3352 /* libxml2.tbd */; };
+		F5EBD75C1F03AEDE00DD3352 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EBD75B1F03AEDE00DD3352 /* libresolv.tbd */; };
+		F5EBD7611F03AF4100DD3352 /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBD7601F03AF4100DD3352 /* XMPPManager.m */; };
+		F5FDF0D91F04A7E100D670B5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5FDF0D81F04A7E100D670B5 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5EBD7371F03AB4700DD3352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBD7151F03AB4700DD3352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EBD71C1F03AB4700DD3352;
+			remoteInfo = GYChat;
+		};
+		F5EBD7421F03AB4800DD3352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBD7151F03AB4700DD3352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EBD71C1F03AB4700DD3352;
+			remoteInfo = GYChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59FAB779163167B2EFCB6628 /* Pods-GYChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYChat/Pods-GYChat.release.xcconfig"; sourceTree = "<group>"; };
+		6E9032B408B44D3FA2882F2A /* Pods-GYChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYChat/Pods-GYChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E4E662652E91908FDCE3730D /* Pods_GYChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5371FF11F0B9C8900C43B90 /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
+		F5371FF21F0B9C8900C43B90 /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		F5371FF41F0B9C9200C43B90 /* RightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableViewCell.h; sourceTree = "<group>"; };
+		F5371FF51F0B9C9200C43B90 /* RightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableViewCell.m; sourceTree = "<group>"; };
+		F5EBD71D1F03AB4700DD3352 /* GYChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EBD7211F03AB4700DD3352 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5EBD7231F03AB4700DD3352 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5EBD7241F03AB4700DD3352 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5EBD7261F03AB4700DD3352 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5EBD7271F03AB4700DD3352 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5EBD72A1F03AB4700DD3352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5EBD72C1F03AB4700DD3352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5EBD72F1F03AB4700DD3352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5EBD7311F03AB4700DD3352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EBD7361F03AB4700DD3352 /* GYChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EBD73A1F03AB4700DD3352 /* GYChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYChatTests.m; sourceTree = "<group>"; };
+		F5EBD73C1F03AB4700DD3352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EBD7411F03AB4800DD3352 /* GYChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EBD7451F03AB4800DD3352 /* GYChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYChatUITests.m; sourceTree = "<group>"; };
+		F5EBD7471F03AB4800DD3352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EBD7531F03ADB000DD3352 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		F5EBD7541F03ADB000DD3352 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		F5EBD7561F03AE4C00DD3352 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		F5EBD7571F03AE4C00DD3352 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		F5EBD7591F03AED100DD3352 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F5EBD75B1F03AEDE00DD3352 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		F5EBD75D1F03AEF400DD3352 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5EBD75F1F03AF4100DD3352 /* XMPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPManager.h; sourceTree = "<group>"; };
+		F5EBD7601F03AF4100DD3352 /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
+		F5FDF0D81F04A7E100D670B5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5EBD71A1F03AB4700DD3352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EBD75C1F03AEDE00DD3352 /* libresolv.tbd in Frameworks */,
+				F5EBD75A1F03AED100DD3352 /* libxml2.tbd in Frameworks */,
+				9CC708E8E12B90981AB6A267 /* Pods_GYChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD7331F03AB4700DD3352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD73E1F03AB4800DD3352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0E0D4A97E841103863E27D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD75B1F03AEDE00DD3352 /* libresolv.tbd */,
+				F5EBD7591F03AED100DD3352 /* libxml2.tbd */,
+				E4E662652E91908FDCE3730D /* Pods_GYChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D36AC7720AAC2B45A7185E13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E9032B408B44D3FA2882F2A /* Pods-GYChat.debug.xcconfig */,
+				59FAB779163167B2EFCB6628 /* Pods-GYChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5EBD7141F03AB4700DD3352 = {
+			isa = PBXGroup;
+			children = (
+				F5EBD71F1F03AB4700DD3352 /* GYChat */,
+				F5EBD7391F03AB4700DD3352 /* GYChatTests */,
+				F5EBD7441F03AB4800DD3352 /* GYChatUITests */,
+				F5EBD71E1F03AB4700DD3352 /* Products */,
+				D36AC7720AAC2B45A7185E13 /* Pods */,
+				1C0E0D4A97E841103863E27D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EBD71E1F03AB4700DD3352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD71D1F03AB4700DD3352 /* GYChat.app */,
+				F5EBD7361F03AB4700DD3352 /* GYChatTests.xctest */,
+				F5EBD7411F03AB4800DD3352 /* GYChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5EBD71F1F03AB4700DD3352 /* GYChat */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD75E1F03AF3000DD3352 /* XMPPManager */,
+				F5EBD7231F03AB4700DD3352 /* AppDelegate.h */,
+				F5EBD7241F03AB4700DD3352 /* AppDelegate.m */,
+				F5EBD7261F03AB4700DD3352 /* ViewController.h */,
+				F5EBD7271F03AB4700DD3352 /* ViewController.m */,
+				F5EBD7531F03ADB000DD3352 /* ListTableViewController.h */,
+				F5EBD7541F03ADB000DD3352 /* ListTableViewController.m */,
+				F5EBD7561F03AE4C00DD3352 /* ChatTableViewController.h */,
+				F5EBD7571F03AE4C00DD3352 /* ChatTableViewController.m */,
+				F5371FF11F0B9C8900C43B90 /* LeftTableViewCell.h */,
+				F5371FF21F0B9C8900C43B90 /* LeftTableViewCell.m */,
+				F5371FF41F0B9C9200C43B90 /* RightTableViewCell.h */,
+				F5371FF51F0B9C9200C43B90 /* RightTableViewCell.m */,
+				F5FDF0D81F04A7E100D670B5 /* icon.png */,
+				F5EBD7291F03AB4700DD3352 /* Main.storyboard */,
+				F5EBD72C1F03AB4700DD3352 /* Assets.xcassets */,
+				F5EBD72E1F03AB4700DD3352 /* LaunchScreen.storyboard */,
+				F5EBD75D1F03AEF400DD3352 /* PrefixHeader.pch */,
+				F5EBD7311F03AB4700DD3352 /* Info.plist */,
+				F5EBD7201F03AB4700DD3352 /* Supporting Files */,
+			);
+			path = GYChat;
+			sourceTree = "<group>";
+		};
+		F5EBD7201F03AB4700DD3352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD7211F03AB4700DD3352 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5EBD7391F03AB4700DD3352 /* GYChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD73A1F03AB4700DD3352 /* GYChatTests.m */,
+				F5EBD73C1F03AB4700DD3352 /* Info.plist */,
+			);
+			path = GYChatTests;
+			sourceTree = "<group>";
+		};
+		F5EBD7441F03AB4800DD3352 /* GYChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD7451F03AB4800DD3352 /* GYChatUITests.m */,
+				F5EBD7471F03AB4800DD3352 /* Info.plist */,
+			);
+			path = GYChatUITests;
+			sourceTree = "<group>";
+		};
+		F5EBD75E1F03AF3000DD3352 /* XMPPManager */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBD75F1F03AF4100DD3352 /* XMPPManager.h */,
+				F5EBD7601F03AF4100DD3352 /* XMPPManager.m */,
+			);
+			path = XMPPManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5EBD71C1F03AB4700DD3352 /* GYChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EBD74A1F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChat" */;
+			buildPhases = (
+				EBD618F8FE0D1214F07F239B /* [CP] Check Pods Manifest.lock */,
+				F5EBD7191F03AB4700DD3352 /* Sources */,
+				F5EBD71A1F03AB4700DD3352 /* Frameworks */,
+				F5EBD71B1F03AB4700DD3352 /* Resources */,
+				1A09A302852876A640AEC89D /* [CP] Embed Pods Frameworks */,
+				32E6DE51F014B3FABC9EB6D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYChat;
+			productName = GYChat;
+			productReference = F5EBD71D1F03AB4700DD3352 /* GYChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5EBD7351F03AB4700DD3352 /* GYChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EBD74D1F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChatTests" */;
+			buildPhases = (
+				F5EBD7321F03AB4700DD3352 /* Sources */,
+				F5EBD7331F03AB4700DD3352 /* Frameworks */,
+				F5EBD7341F03AB4700DD3352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EBD7381F03AB4700DD3352 /* PBXTargetDependency */,
+			);
+			name = GYChatTests;
+			productName = GYChatTests;
+			productReference = F5EBD7361F03AB4700DD3352 /* GYChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5EBD7401F03AB4800DD3352 /* GYChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EBD7501F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChatUITests" */;
+			buildPhases = (
+				F5EBD73D1F03AB4800DD3352 /* Sources */,
+				F5EBD73E1F03AB4800DD3352 /* Frameworks */,
+				F5EBD73F1F03AB4800DD3352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EBD7431F03AB4800DD3352 /* PBXTargetDependency */,
+			);
+			name = GYChatUITests;
+			productName = GYChatUITests;
+			productReference = F5EBD7411F03AB4800DD3352 /* GYChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5EBD7151F03AB4700DD3352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = deepbaytech;
+				TargetAttributes = {
+					F5EBD71C1F03AB4700DD3352 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 35QPJC564V;
+						ProvisioningStyle = Automatic;
+					};
+					F5EBD7351F03AB4700DD3352 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5EBD71C1F03AB4700DD3352;
+					};
+					F5EBD7401F03AB4800DD3352 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5EBD71C1F03AB4700DD3352;
+					};
+				};
+			};
+			buildConfigurationList = F5EBD7181F03AB4700DD3352 /* Build configuration list for PBXProject "GYChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5EBD7141F03AB4700DD3352;
+			productRefGroup = F5EBD71E1F03AB4700DD3352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5EBD71C1F03AB4700DD3352 /* GYChat */,
+				F5EBD7351F03AB4700DD3352 /* GYChatTests */,
+				F5EBD7401F03AB4800DD3352 /* GYChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5EBD71B1F03AB4700DD3352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EBD7301F03AB4700DD3352 /* LaunchScreen.storyboard in Resources */,
+				F5FDF0D91F04A7E100D670B5 /* icon.png in Resources */,
+				F5EBD72D1F03AB4700DD3352 /* Assets.xcassets in Resources */,
+				F5EBD72B1F03AB4700DD3352 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD7341F03AB4700DD3352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD73F1F03AB4800DD3352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A09A302852876A640AEC89D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYChat/Pods-GYChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E6DE51F014B3FABC9EB6D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYChat/Pods-GYChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD618F8FE0D1214F07F239B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5EBD7191F03AB4700DD3352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5371FF61F0B9C9200C43B90 /* RightTableViewCell.m in Sources */,
+				F5EBD7281F03AB4700DD3352 /* ViewController.m in Sources */,
+				F5EBD7581F03AE4C00DD3352 /* ChatTableViewController.m in Sources */,
+				F5EBD7611F03AF4100DD3352 /* XMPPManager.m in Sources */,
+				F5371FF31F0B9C8900C43B90 /* LeftTableViewCell.m in Sources */,
+				F5EBD7251F03AB4700DD3352 /* AppDelegate.m in Sources */,
+				F5EBD7221F03AB4700DD3352 /* main.m in Sources */,
+				F5EBD7551F03ADB000DD3352 /* ListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD7321F03AB4700DD3352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EBD73B1F03AB4700DD3352 /* GYChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EBD73D1F03AB4800DD3352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EBD7461F03AB4800DD3352 /* GYChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5EBD7381F03AB4700DD3352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EBD71C1F03AB4700DD3352 /* GYChat */;
+			targetProxy = F5EBD7371F03AB4700DD3352 /* PBXContainerItemProxy */;
+		};
+		F5EBD7431F03AB4800DD3352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EBD71C1F03AB4700DD3352 /* GYChat */;
+			targetProxy = F5EBD7421F03AB4800DD3352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5EBD7291F03AB4700DD3352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5EBD72A1F03AB4700DD3352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5EBD72E1F03AB4700DD3352 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5EBD72F1F03AB4700DD3352 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5EBD7481F03AB4800DD3352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5EBD7491F03AB4800DD3352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5EBD74B1F03AB4800DD3352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9032B408B44D3FA2882F2A /* Pods-GYChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 35QPJC564V;
+				GCC_PREFIX_HEADER = GYChat/PrefixHeader.pch;
+				INFOPLIST_FILE = GYChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		F5EBD74C1F03AB4800DD3352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FAB779163167B2EFCB6628 /* Pods-GYChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 35QPJC564V;
+				GCC_PREFIX_HEADER = GYChat/PrefixHeader.pch;
+				INFOPLIST_FILE = GYChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		F5EBD74E1F03AB4800DD3352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYChat.app/GYChat";
+			};
+			name = Debug;
+		};
+		F5EBD74F1F03AB4800DD3352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYChat.app/GYChat";
+			};
+			name = Release;
+		};
+		F5EBD7511F03AB4800DD3352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYChat;
+			};
+			name = Debug;
+		};
+		F5EBD7521F03AB4800DD3352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GY.Z.GYChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5EBD7181F03AB4700DD3352 /* Build configuration list for PBXProject "GYChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBD7481F03AB4800DD3352 /* Debug */,
+				F5EBD7491F03AB4800DD3352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EBD74A1F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBD74B1F03AB4800DD3352 /* Debug */,
+				F5EBD74C1F03AB4800DD3352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EBD74D1F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBD74E1F03AB4800DD3352 /* Debug */,
+				F5EBD74F1F03AB4800DD3352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EBD7501F03AB4800DD3352 /* Build configuration list for PBXNativeTarget "GYChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBD7511F03AB4800DD3352 /* Debug */,
+				F5EBD7521F03AB4800DD3352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5EBD7151F03AB4700DD3352 /* Project object */;
+}
